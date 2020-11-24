@@ -1,0 +1,13 @@
+.logo {
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+}
+.logo > span {
+  color: #4af0c5;
+}

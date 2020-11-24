@@ -1,0 +1,21 @@
+.title {
+  max-width: 500px;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .title {
+    max-width: 720px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 80px;
+  }
+}
