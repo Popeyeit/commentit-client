@@ -1,12 +1,9 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import CommentForm from './components/comment-form/CommentForm';
 import Header from './components/header/Header';
-import CommentSection from './components/comment-section/CommentSection';
-
-import './App.css';
-import CommentList from './components/comment-list/CommentList';
 import Home from './pages/home/Home';
+import CommentsPage from './pages/comments-page/CommentsPage';
+import './App.css';
 
 function App() {
   return (
@@ -16,13 +13,12 @@ function App() {
         <Route path="/" exact>
           <Home />
         </Route>
-        <Route path="/comments"></Route>
+        <Route path="/comments">
+          <CommentsPage />
+        </Route>
       </Switch>
-      <CommentList />
     </>
   );
 }
-
-// <CommentForm />
 
 export default App;

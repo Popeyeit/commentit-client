@@ -6,9 +6,6 @@ const CommentSection = () => {
     <section className={styled.comments}>
       <div className="container">
         <CommentSectionHeading />
-        <button type="button" className={styled.add__btn}>
-          +
-        </button>
       </div>
     </section>
   );

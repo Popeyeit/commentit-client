@@ -6,6 +6,7 @@
   align-items: center;
   padding: 40px;
   justify-content: center;
+  position: relative;
 }
 .comment__from_label {
   width: 100%;
@@ -48,15 +49,14 @@
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  border: 2px solid #4af0c5;
+  border: none;
   background-color: #4af0c5;
   color: #fff;
   font-size: 18px;
 }
 
 .comment__btn:hover {
-  background-color: #fff;
-  color: #4af0c5;
+  background-color: #4fd6b8;
 }
 
 .logo__wrapper {
@@ -71,4 +71,15 @@
   text-align: center;
   font-size: 14px;
   color: red;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: none;
+  background-image: url('/src/img/close-btn.svg');
 }

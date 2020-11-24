@@ -3,21 +3,25 @@ import { Formik, Form, Field } from 'formik';
 import Schema from './validate';
 import styled from './commentForm.module.css';
 import Logo from '../logo/Logo';
-const CommentForm = ({ onClose }) => {
+const CommentForm = ({ handleAddComment, handleCloseModal }) => {
   return (
     <Formik
       initialValues={{ name: '', text: '' }}
       validationSchema={Schema}
       onSubmit={values => {
-        // same shape as initial values
-        console.log(values);
+        handleAddComment(values);
       }}
     >
       {({ errors, touched }) => {
         return (
           <Form className={styled.comment__form}>
+            <button
+              type="button"
+              onClick={handleCloseModal}
+              className={styled.closeBtn}
+            />
             <div className={styled.logo__wrapper}>
-              <Logo />
+              <Logo color="000" />
             </div>
 
             <label className={styled.comment__from_label}>

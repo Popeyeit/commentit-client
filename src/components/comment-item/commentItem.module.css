@@ -37,4 +37,8 @@
   .item {
     width: 400px;
   }
+  .item:nth-child(1n) {
+    content: '';
+    margin-bottom: 30px;
+  }
 }
