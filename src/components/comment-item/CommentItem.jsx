@@ -2,19 +2,11 @@ import React, { useState } from 'react';
 import styled from './commentItem.module.css';
 import Stars from '../stars/Stars';
 
-const CommentItem = ({
-  text,
-  name,
-  likes = 0,
-  _id,
-  handleChangeStars,
-  changeComments,
-}) => {
+const CommentItem = ({ text, name, likes = 0, _id, handleChangeStars }) => {
   const [stars, setStars] = useState(likes);
 
   const handleSetStars = async (e, newStars) => {
     setStars(newStars);
-    changeComments(_id, newStars);
     await handleChangeStars(_id, Number(newStars));
   };
 

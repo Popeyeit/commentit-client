@@ -1,8 +1,8 @@
 import React from 'react';
 import { Formik, Form, Field } from 'formik';
 import Schema from './validate';
-import styled from './commentForm.module.css';
 import Logo from '../logo/Logo';
+import styled from './commentForm.module.css';
 const CommentForm = ({ handleAddComment, handleCloseModal }) => {
   return (
     <Formik

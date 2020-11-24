@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from './navigation.module.css';
+
 const Navigation = () => {
   return (
     <nav className={styled.navigation}>
